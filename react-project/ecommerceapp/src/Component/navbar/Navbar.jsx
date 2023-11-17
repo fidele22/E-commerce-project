@@ -17,7 +17,7 @@ function Navbar() {
             <li onClick={()=>{setMenu('land')}}><Link style={{textDecoration:'none'}}to='/land'>land</Link>{menu==='land'? <hr/>:<></>}</li>
         </ul>
        <div className='navbar-login'>
-        <button>Login</button>
+        <button><Link style={{textDecoration:'none'}} to='/signup'>Login</Link></button>
         <img src={cart} alt="" style={{ width: '60px', height: '40px' }} />
          <div className='cart-count'>0</div>
        </div>

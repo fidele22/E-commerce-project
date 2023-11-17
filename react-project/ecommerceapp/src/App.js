@@ -7,6 +7,7 @@ import Loginsignup from './pages/Loginsignup';
 import Cart from './pages/Cart';
 import Product from './pages/Product';
 import Footer from './Component/footer/Footer';
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/house" element={<ShopCategory />} />
           <Route path="/land" element={<ShopCategory />} />
-          <Route path="/login" element={<Loginsignup />} />
+          <Route path="/signup" element={<Loginsignup />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/product" element={<Product />} />
           <Route path="/:productId" element={<Product />} />
           <Route path="/cart" element={<Cart />} />
